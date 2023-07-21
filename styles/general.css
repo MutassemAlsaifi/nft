@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+/* this is for html element  */
+:root {
+  font-size: 10px;
+  --main_color: #090f1d;
+  --main_color_opacity: rgb(9, 15, 29, 0.99);
+  --text_main_color: #fffffd;
+  --text_sec_color: #d6ef0e;
+}
+.animate__animated {
+  -webkit-animation-fill-mode: forwards !important;
+  animation-fill-mode: forwards !important;
+}
+body {
+  width: 100%;
+  /* background-image: url(../imgs/grenral/Bg\ IMage.png); */
+  background-color: var(--main_color_opacity);
+  filter: saturate(100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  font-size: inherit;
+}
+button {
+  outline: transparent;
+  border: 2px solid var(--text_sec_color);
+  color: inherit;
+  cursor: pointer;
+}
+.container {
+  margin: auto;
+  width: 80%;
+}
+section h2 {
+  font-family: "Canela_Medium";
+  font-size: 4.8rem;
+}
+section span {
+  font-family: "Canela_Medium";
+  color: var(--text_sec_color);
+}
+/* *******************THIS CLASSES FOR JS **************************** */
+
+/* TO HIDE ANY THING  */
+.hide {
+  display: none !important;
+}
+/* TO CHANGE  BAR IN MOBILE  */
+.change_nav {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--text_main_color);
+  width: 30%;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10vh;
+  right: 0;
+  gap: 2rem;
+  color: var(--main_color);
+  z-index: 20000;
+}

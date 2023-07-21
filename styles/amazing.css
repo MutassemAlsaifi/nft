@@ -1,0 +1,99 @@
+.amazing {
+  padding: 10rem 0;
+  overflow: hidden;
+}
+.amazing .container .header_content {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  color: var(--text_main_color);
+}
+.amazing button {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  background-color: var(--text_sec_color);
+  border: solid 2px var(--text_sec_color);
+  color: var(--text_main_color);
+  transition: 1s;
+}
+.amazing button:hover {
+  background-color: var(--text_main_color);
+  color: var(--text_sec_color);
+}
+.amazing .container .boxes img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.amazing .container .boxes {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.amazing .container .box {
+  padding: 2rem;
+  border-radius: 2rem;
+  background-color: #131e3a;
+  width: fit-content;
+  color: var(--text_main_color);
+  margin-top: 5rem;
+  flex-grow: 1;
+  font-family: "Inter_Bold";
+  filter: drop-shadow(0 -1px 0.1px var(--text_sec_color));
+  transition: 1s;
+}
+.amazing .container .box .price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2.4rem;
+  padding: 1rem 0;
+}
+.amazing .container .box .price > div {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 1.6rem;
+}
+.amazing .container .box .footer_box .time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.amazing .container .box .footer_box .time > div {
+  display: grid;
+  gap: 1rem;
+}
+.amazing .container .box .footer_box .time > div > p {
+  font-family: "Inter_Regular";
+  color: #838382;
+}
+.amazing .container .box .footer_box .time > div > div {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.6rem;
+}
+.amazing .container .box .footer_box .time > div > div p {
+}
+.amazing .box button {
+  background-color: transparent;
+  border: solid 2px var(--text_sec_color);
+  color: var(--text_sec_color);
+  transition: 1s;
+}
+.amazing .box button:hover {
+  border: solid 2px var(--text_main_color);
+  color: var(--text_main_color);
+  background-color: var(--text_sec_color);
+}
+/* RESPONSIVE FOR MAIN  */
+@media (max-width: 1100px) {
+  .amazing .container .boxes {
+    flex-wrap: wrap;
+  }
+  .amazing .container .header_content {
+    align-items: center;
+    padding-bottom: 5rem;
+  }
+}

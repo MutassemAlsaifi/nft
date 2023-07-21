@@ -1,0 +1,122 @@
+/* START STYLE FOR BEST SECTION  */
+section.best {
+  color: var(--text_main_color);
+}
+section.best .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section.best .container .right_content {
+  display: flex;
+  position: relative;
+  width: 40%;
+  justify-content: end;
+}
+section.best .container .right_content :nth-child(1) {
+  position: absolute;
+  top: 50%;
+  right: 60%;
+}
+section.best .container .left_content .main_text {
+  font-family: "Canela_Medium";
+  font-size: 6.3rem;
+}
+section.best .container span {
+  color: var(--text_sec_color);
+}
+section.best .container .left_content {
+  width: 40%;
+  display: grid;
+  gap: 3rem;
+  width: 40%;
+}
+section.best .container .left_content p {
+  font-family: "Canela_Regular";
+  font-size: 1.6rem;
+}
+section.best .container .left_content .Explore_Now {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+section.best .container .left_content .Explore_Now a {
+  font-size: 1.6rem;
+  font-family: "Inter_Regular";
+}
+section.best .container .left_content button {
+  padding: 1rem 2rem;
+  background-color: var(--text_sec_color);
+  font-size: 1.6rem;
+  font-family: "Inter_Bold";
+  border-radius: 1rem;
+}
+
+/* RESPONSIVE FOR MAIN  */
+
+@media (min-width: 992px) and (max-width: 1400px) {
+  section.best .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+  }
+  section.best .container .left_content {
+    width: 100%;
+  }
+  section.best .container .right_content {
+    margin-top: 5rem;
+  }
+}
+@media (min-width: 400px) and (max-width: 992px) {
+  section.best .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+  section.best .container .left_content {
+    flex-grow: 1;
+    width: 100%;
+  }
+  section.best .container .right_content {
+    position: static;
+    width: 100%;
+    margin-top: 5rem;
+    gap: 5rem;
+    justify-content: space-between;
+  }
+  section.best .container .right_content :nth-child(1) {
+    position: static;
+  }
+  section.best .container .right_content img {
+    object-fit: cover;
+    width: 40%;
+  }
+}
+@media (max-width: 400px) {
+  section.best .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+  section.best .container .left_content {
+    flex-grow: 1;
+    width: 100%;
+  }
+  section.best .container .right_content {
+    position: static;
+    width: 100%;
+    margin-top: 5rem;
+    gap: 5rem;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+  section.best .container .right_content :nth-child(1) {
+    position: static;
+  }
+  section.best .container .right_content img {
+    object-fit: cover;
+    width: 40%;
+  }
+}
+/* END STYLE FOR BEST SECTION  */

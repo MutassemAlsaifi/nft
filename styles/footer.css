@@ -1,0 +1,76 @@
+footer {
+  padding: 3rem 0;
+  color: var(--text_main_color);
+  font-family: "Inter_Regular";
+}
+footer .container {
+  display: grid;
+  gap: 2rem;
+}
+footer .container .flex_div {
+  width: 100% !important;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 3rem;
+  padding: 5rem 0;
+  flex-wrap: wrap;
+}
+footer .container .flex_div p {
+  font-size: 1.6rem;
+}
+footer .container .flex_div > :first-child {
+  width: 300px;
+}
+footer .container .flex_div .box .social_media {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+footer .container .flex_div .box .social_media i {
+  cursor: pointer;
+  background-color: var(--text_main_color);
+  color: var(--main_color);
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+}
+footer .container .flex_div .box .social_media i:hover {
+  background-color: var(--main_color);
+  color: var(--text_main_color);
+  transition: 1s;
+}
+footer .container .flex_div .box {
+  display: grid;
+  gap: 2rem;
+}
+footer .container .flex_div .box h2 {
+  font-size: 2rem;
+  font-family: "Inter_Bold";
+  padding-bottom: 1rem;
+}
+footer .container .flex_div .box a {
+  font-size: 1.6rem;
+}
+footer .container .copy_right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+footer .container .copy_right > div {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+@media (max-width: 567px) {
+  footer {
+    padding: 5rem;
+  }
+}
